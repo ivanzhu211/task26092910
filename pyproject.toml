@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coldchain"
+version = "0.1.0"
+description = "冷链温度超限判定库：按读数时间判定连续超限并维护 P3 风险事件，SQLite 持久化"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = ["coldchain"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
